@@ -21,7 +21,7 @@ extension SpotifyAPIClient {
             let authHeaders = [
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Bearer YOUR_TOKEN_HERE"
+                "Authorization": "Bearer "
             ]
             
             var request = URLRequest(url: (components.url)!)

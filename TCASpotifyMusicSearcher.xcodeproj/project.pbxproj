@@ -52,6 +52,7 @@
 		75CB84E227CB87C100EE0F69 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		C3F564888321814D82710F13 /* AlbumSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumSearch.swift; sourceTree = "<group>"; };
 		C3F56665F74FCE67C11054C6 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C3F569BD205FF02E9D58A166 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 				75CB84C027CB745500EE0F69 /* TCASpotifyMusicSearcherTests */,
 				75CB84CA27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests */,
 				75CB84AE27CB745200EE0F69 /* Products */,
+				C3F569BD205FF02E9D58A166 /* demo.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,7 +236,7 @@
 			mainGroup = 75CB84A427CB745200EE0F69;
 			packageReferences = (
 				75CB84DA27CB749400EE0F69 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 75CB84AE27CB745200EE0F69 /* Products */;
 			projectDirPath = "";
@@ -633,7 +635,7 @@
 				kind = branch;
 			};
 		};
-		75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -651,7 +653,7 @@
 		};
 		75CB84DE27CB833C00EE0F69 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

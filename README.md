@@ -1,6 +1,11 @@
 # TCA Spotify Music Searcher
-Simple spotify music searcher using TCA.
+Simple spotify music searcher using [TCA](https://github.com/pointfreeco/swift-composable-architecture).
 
 ## ScreenShot
-<img width="250" src=https://user-images.githubusercontent.com/93278577/156610099-48fcb55a-05d6-4c0b-a60a-6e703f117449.gif />
+![demo](./demo.gif)
 
+## Usage
+1. Register [Spotify Developer Platform](https://developer.spotify.com/).
+2. Get Token.
+3. Paste to `authHeader["Authorization"]` in `SpotifyApiRepository.swift`
+4. Build Project.
