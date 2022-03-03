@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75CB84B127CB745200EE0F69 /* TCASpotifyMusicSearcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84B027CB745200EE0F69 /* TCASpotifyMusicSearcherApp.swift */; };
+		75CB84B527CB745500EE0F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CB84B427CB745500EE0F69 /* Assets.xcassets */; };
+		75CB84B827CB745500EE0F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CB84B727CB745500EE0F69 /* Preview Assets.xcassets */; };
+		75CB84C227CB745500EE0F69 /* TCASpotifyMusicSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84C127CB745500EE0F69 /* TCASpotifyMusicSearcherTests.swift */; };
+		75CB84CC27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84CB27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.swift */; };
+		75CB84CE27CB745500EE0F69 /* TCASpotifyMusicSearcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84CD27CB745500EE0F69 /* TCASpotifyMusicSearcherUITestsLaunchTests.swift */; };
+		75CB84DC27CB749400EE0F69 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 75CB84DB27CB749400EE0F69 /* ComposableArchitecture */; };
+		75CB84DF27CB833C00EE0F69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75CB84DE27CB833C00EE0F69 /* Alamofire */; };
+		75CB84E127CB837000EE0F69 /* SpotifyApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84E027CB837000EE0F69 /* SpotifyApiRepository.swift */; };
+		75CB84E327CB87C100EE0F69 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB84E227CB87C100EE0F69 /* SearchItem.swift */; };
+		C3F5665FE519A53F4DDCD27D /* AlbumSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F564888321814D82710F13 /* AlbumSearch.swift */; };
+		C3F56ED23219FCFE22113129 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F56665F74FCE67C11054C6 /* Album.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75CB84BE27CB745500EE0F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CB84A527CB745200EE0F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CB84AC27CB745200EE0F69;
+			remoteInfo = TCASpotifyMusicSearcher;
+		};
+		75CB84C827CB745500EE0F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CB84A527CB745200EE0F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CB84AC27CB745200EE0F69;
+			remoteInfo = TCASpotifyMusicSearcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75CB84AD27CB745200EE0F69 /* TCASpotifyMusicSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCASpotifyMusicSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB84B027CB745200EE0F69 /* TCASpotifyMusicSearcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASpotifyMusicSearcherApp.swift; sourceTree = "<group>"; };
+		75CB84B427CB745500EE0F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CB84B727CB745500EE0F69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75CB84BD27CB745500EE0F69 /* TCASpotifyMusicSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCASpotifyMusicSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB84C127CB745500EE0F69 /* TCASpotifyMusicSearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASpotifyMusicSearcherTests.swift; sourceTree = "<group>"; };
+		75CB84C727CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCASpotifyMusicSearcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB84CB27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASpotifyMusicSearcherUITests.swift; sourceTree = "<group>"; };
+		75CB84CD27CB745500EE0F69 /* TCASpotifyMusicSearcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASpotifyMusicSearcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75CB84E027CB837000EE0F69 /* SpotifyApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyApiRepository.swift; sourceTree = "<group>"; };
+		75CB84E227CB87C100EE0F69 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		C3F564888321814D82710F13 /* AlbumSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumSearch.swift; sourceTree = "<group>"; };
+		C3F56665F74FCE67C11054C6 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CB84AA27CB745200EE0F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB84DC27CB749400EE0F69 /* ComposableArchitecture in Frameworks */,
+				75CB84DF27CB833C00EE0F69 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84BA27CB745500EE0F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84C427CB745500EE0F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CB84A427CB745200EE0F69 = {
+			isa = PBXGroup;
+			children = (
+				75CB84AF27CB745200EE0F69 /* TCASpotifyMusicSearcher */,
+				75CB84C027CB745500EE0F69 /* TCASpotifyMusicSearcherTests */,
+				75CB84CA27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests */,
+				75CB84AE27CB745200EE0F69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CB84AE27CB745200EE0F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CB84AD27CB745200EE0F69 /* TCASpotifyMusicSearcher.app */,
+				75CB84BD27CB745500EE0F69 /* TCASpotifyMusicSearcherTests.xctest */,
+				75CB84C727CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CB84AF27CB745200EE0F69 /* TCASpotifyMusicSearcher */ = {
+			isa = PBXGroup;
+			children = (
+				75CB84B027CB745200EE0F69 /* TCASpotifyMusicSearcherApp.swift */,
+				75CB84B427CB745500EE0F69 /* Assets.xcassets */,
+				75CB84B627CB745500EE0F69 /* Preview Content */,
+				C3F56665F74FCE67C11054C6 /* Album.swift */,
+				C3F564888321814D82710F13 /* AlbumSearch.swift */,
+				75CB84E027CB837000EE0F69 /* SpotifyApiRepository.swift */,
+				75CB84E227CB87C100EE0F69 /* SearchItem.swift */,
+			);
+			path = TCASpotifyMusicSearcher;
+			sourceTree = "<group>";
+		};
+		75CB84B627CB745500EE0F69 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75CB84B727CB745500EE0F69 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75CB84C027CB745500EE0F69 /* TCASpotifyMusicSearcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				75CB84C127CB745500EE0F69 /* TCASpotifyMusicSearcherTests.swift */,
+			);
+			path = TCASpotifyMusicSearcherTests;
+			sourceTree = "<group>";
+		};
+		75CB84CA27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75CB84CB27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.swift */,
+				75CB84CD27CB745500EE0F69 /* TCASpotifyMusicSearcherUITestsLaunchTests.swift */,
+			);
+			path = TCASpotifyMusicSearcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CB84AC27CB745200EE0F69 /* TCASpotifyMusicSearcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CB84D127CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcher" */;
+			buildPhases = (
+				75CB84A927CB745200EE0F69 /* Sources */,
+				75CB84AA27CB745200EE0F69 /* Frameworks */,
+				75CB84AB27CB745200EE0F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCASpotifyMusicSearcher;
+			packageProductDependencies = (
+				75CB84DB27CB749400EE0F69 /* ComposableArchitecture */,
+				75CB84DE27CB833C00EE0F69 /* Alamofire */,
+			);
+			productName = TCASpotifyMusicSearcher;
+			productReference = 75CB84AD27CB745200EE0F69 /* TCASpotifyMusicSearcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75CB84BC27CB745500EE0F69 /* TCASpotifyMusicSearcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CB84D427CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcherTests" */;
+			buildPhases = (
+				75CB84B927CB745500EE0F69 /* Sources */,
+				75CB84BA27CB745500EE0F69 /* Frameworks */,
+				75CB84BB27CB745500EE0F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75CB84BF27CB745500EE0F69 /* PBXTargetDependency */,
+			);
+			name = TCASpotifyMusicSearcherTests;
+			productName = TCASpotifyMusicSearcherTests;
+			productReference = 75CB84BD27CB745500EE0F69 /* TCASpotifyMusicSearcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75CB84C627CB745500EE0F69 /* TCASpotifyMusicSearcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CB84D727CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcherUITests" */;
+			buildPhases = (
+				75CB84C327CB745500EE0F69 /* Sources */,
+				75CB84C427CB745500EE0F69 /* Frameworks */,
+				75CB84C527CB745500EE0F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75CB84C927CB745500EE0F69 /* PBXTargetDependency */,
+			);
+			name = TCASpotifyMusicSearcherUITests;
+			productName = TCASpotifyMusicSearcherUITests;
+			productReference = 75CB84C727CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CB84A527CB745200EE0F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					75CB84AC27CB745200EE0F69 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					75CB84BC27CB745500EE0F69 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 75CB84AC27CB745200EE0F69;
+					};
+					75CB84C627CB745500EE0F69 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 75CB84AC27CB745200EE0F69;
+					};
+				};
+			};
+			buildConfigurationList = 75CB84A827CB745200EE0F69 /* Build configuration list for PBXProject "TCASpotifyMusicSearcher" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CB84A427CB745200EE0F69;
+			packageReferences = (
+				75CB84DA27CB749400EE0F69 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 75CB84AE27CB745200EE0F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CB84AC27CB745200EE0F69 /* TCASpotifyMusicSearcher */,
+				75CB84BC27CB745500EE0F69 /* TCASpotifyMusicSearcherTests */,
+				75CB84C627CB745500EE0F69 /* TCASpotifyMusicSearcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CB84AB27CB745200EE0F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB84B827CB745500EE0F69 /* Preview Assets.xcassets in Resources */,
+				75CB84B527CB745500EE0F69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84BB27CB745500EE0F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84C527CB745500EE0F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CB84A927CB745200EE0F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB84E327CB87C100EE0F69 /* SearchItem.swift in Sources */,
+				75CB84E127CB837000EE0F69 /* SpotifyApiRepository.swift in Sources */,
+				75CB84B127CB745200EE0F69 /* TCASpotifyMusicSearcherApp.swift in Sources */,
+				C3F56ED23219FCFE22113129 /* Album.swift in Sources */,
+				C3F5665FE519A53F4DDCD27D /* AlbumSearch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84B927CB745500EE0F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB84C227CB745500EE0F69 /* TCASpotifyMusicSearcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CB84C327CB745500EE0F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CB84CC27CB745500EE0F69 /* TCASpotifyMusicSearcherUITests.swift in Sources */,
+				75CB84CE27CB745500EE0F69 /* TCASpotifyMusicSearcherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75CB84BF27CB745500EE0F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CB84AC27CB745200EE0F69 /* TCASpotifyMusicSearcher */;
+			targetProxy = 75CB84BE27CB745500EE0F69 /* PBXContainerItemProxy */;
+		};
+		75CB84C927CB745500EE0F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CB84AC27CB745200EE0F69 /* TCASpotifyMusicSearcher */;
+			targetProxy = 75CB84C827CB745500EE0F69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75CB84CF27CB745500EE0F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75CB84D027CB745500EE0F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CB84D227CB745500EE0F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCASpotifyMusicSearcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75CB84D327CB745500EE0F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCASpotifyMusicSearcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75CB84D527CB745500EE0F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCASpotifyMusicSearcher.app/TCASpotifyMusicSearcher";
+			};
+			name = Debug;
+		};
+		75CB84D627CB745500EE0F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCASpotifyMusicSearcher.app/TCASpotifyMusicSearcher";
+			};
+			name = Release;
+		};
+		75CB84D827CB745500EE0F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCASpotifyMusicSearcher;
+			};
+			name = Debug;
+		};
+		75CB84D927CB745500EE0F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.sekai.TCASpotifyMusicSearcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TCASpotifyMusicSearcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CB84A827CB745200EE0F69 /* Build configuration list for PBXProject "TCASpotifyMusicSearcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB84CF27CB745500EE0F69 /* Debug */,
+				75CB84D027CB745500EE0F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CB84D127CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB84D227CB745500EE0F69 /* Debug */,
+				75CB84D327CB745500EE0F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CB84D427CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB84D527CB745500EE0F69 /* Debug */,
+				75CB84D627CB745500EE0F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CB84D727CB745500EE0F69 /* Build configuration list for PBXNativeTarget "TCASpotifyMusicSearcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CB84D827CB745500EE0F69 /* Debug */,
+				75CB84D927CB745500EE0F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75CB84DA27CB749400EE0F69 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75CB84DB27CB749400EE0F69 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CB84DA27CB749400EE0F69 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		75CB84DE27CB833C00EE0F69 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CB84DD27CB833C00EE0F69 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 75CB84A527CB745200EE0F69 /* Project object */;
+}
