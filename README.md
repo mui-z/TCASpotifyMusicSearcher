@@ -1,5 +1,5 @@
 # TCA Spotify Music Searcher
-Simple spotify music searcher using [TCA](https://github.com/pointfreeco/swift-composable-architecture).
+Simple spotify music searcher using [TCA](https://github.com/pointfreeco/swift-composable-architecture) architecture.
 
 ## ScreenShot
 ![demo](./demo.gif)
